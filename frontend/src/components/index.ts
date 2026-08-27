@@ -4,4 +4,5 @@
 export { AppShell } from "./AppShell";
 export { TopBar } from "./TopBar";
 export { Sidebar } from "./Sidebar";
+export { StatusBadge } from "./StatusBadge";
 export { Whiteboard } from "./Whiteboard";
