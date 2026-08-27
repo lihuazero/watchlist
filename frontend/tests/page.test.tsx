@@ -3,8 +3,8 @@ import { render, screen } from "@testing-library/react";
 import Home from "../src/app/page";
 
 describe("Home page", () => {
-  it("renders the placeholder home page", () => {
+  it("renders the canvas placeholder container", () => {
     render(<Home />);
-    expect(screen.getByText("OpenVelo")).toBeInTheDocument();
+    expect(screen.getByTestId("canvas-placeholder")).toBeInTheDocument();
   });
 });
