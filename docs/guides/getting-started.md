@@ -34,9 +34,10 @@ timestamp: 2026-08-27T07:05:00Z
    any origin (CORS is configured to allow all origins), so the frontend (or
    any other client) can call it without extra configuration.
 5. **Verify the frontend** by opening `http://localhost:3002/` in a browser —
-   it should show a page titled "OpenVelo" with a placeholder heading and
-   description text (see [Frontend](/architecture/frontend.md) for exact
-   expected content).
+   it should show a page titled "OpenVelo" with a dark-themed persistent
+   top bar ("Untitled Board" + Save/Share buttons) and left sidebar rail,
+   with an empty canvas area below/beside them (see
+   [Frontend](/architecture/frontend.md) for exact expected content).
 6. **Run tests for both workspaces**:
    ```bash
    npm test
