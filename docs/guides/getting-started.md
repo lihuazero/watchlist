@@ -35,8 +35,9 @@ timestamp: 2026-08-27T07:05:00Z
    any other client) can call it without extra configuration.
 5. **Verify the frontend** by opening `http://localhost:3002/` in a browser —
    it should show a page titled "OpenVelo" with a dark-themed persistent
-   top bar ("Untitled Board" + Save/Share buttons) and left sidebar rail,
-   with an empty canvas area below/beside them (see
+   top bar ("Untitled Board" + Save/Share buttons), a left sidebar rail
+   showing tldraw's vertical toolbar, and an interactive tldraw whiteboard
+   canvas filling the remaining space (see
    [Frontend](/architecture/frontend.md) for exact expected content).
 6. **Run tests for both workspaces**:
    ```bash
