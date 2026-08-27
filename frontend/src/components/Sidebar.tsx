@@ -1,16 +1,23 @@
 /**
  * Fixed-width left sidebar rail.
  *
- * This is an empty placeholder container for now — a future job will embed
- * the whiteboard library's own toolbar into this container. Do not add tool
- * icons or toolbar contents here yet.
+ * Hosts tldraw's own vertical toolbar. The whiteboard canvas (rendered in
+ * the main content region) portals its `DefaultToolbar` (with
+ * `orientation="vertical"`) into the `sidebar-toolbar-slot` container below
+ * at runtime — see `frontend/src/components/Whiteboard.tsx`. This component
+ * itself renders no tldraw code and stays a plain Server Component.
  */
 export function Sidebar() {
   return (
     <aside
       data-testid="sidebar"
       aria-label="Toolbar sidebar"
-      className="w-16 shrink-0 border-r border-slate-800 bg-slate-900"
-    />
+      className="flex w-16 shrink-0 flex-col items-center border-r border-slate-800 bg-slate-900"
+    >
+      <div
+        data-testid="sidebar-toolbar-slot"
+        className="flex w-full flex-1 flex-col items-center overflow-y-auto py-2"
+      />
+    </aside>
   );
 }
